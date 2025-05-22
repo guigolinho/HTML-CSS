@@ -95,8 +95,29 @@ nav ul li a {
 	display: flex;
 	align-items: center;
 	margin-bottom: 8px;
+	gap: 6px;
 }
-.campo * {
-	width: 100px;
+.campo label {
   font-weight: bold;
+}
+.campo input {
+	width: 60px;
+}
+#boxIMC {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+	width: 600px;
+}
+
+#resultadoIMC {
+	width: 600px;
+	height: 30px;
+	text-align: center;
+  font-weight: bold;
+	align-items: center;
+	padding: 8px;
+}
+button {
+  box-sizing: border-box;
+  height: 22px;
 }
