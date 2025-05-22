@@ -1,122 +1,138 @@
 :root {
-    --corbg: #DFF0FF;
-    --cortexto: #222222;
-    --bordapadrao: 2px solid black;
-		--fontepadrao: Montserrat, Arial, monospace, sans-serif;
+  --corbg: #DFF0FF;
+  --cortexto: #222222;
+  --bordapadrao: 2px solid black;
+  --fontepadrao: Montserrat, Arial, monospace, sans-serif;
 }
- header, main, footer {
-	margin: 0px;
-	padding: 0px;
-	border: 0px;
+
+header, main, footer {
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
 }
+
 body {
-	font-family: var(--fontepadrao);
-	color: var(--cortexto);
-	background-color: #AADDFF;
+  font-family: var(--fontepadrao);
+  color: var(--cortexto);
+  background-color: #AADDFF;
 }
+
 header {
-	max-width: 1200px;
-	margin: 15px auto;
-	padding: 0 25px;
-	box-sizing: border-box;
-	background-image: url('./imagens/azul.jpg');
-	background-position: center 60%;
+  max-width: 1200px;
+  margin: 15px auto;
+  padding: 0 25px;
+  box-sizing: border-box;
+  background-image: url('./imagens/azul.jpg');
+  background-position: center 60%;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
   min-height: 200px;
-	height: 200px;
+  height: 200px;
   border: var(--bordapadrao);
-	border-radius: 30px;
+  border-radius: 30px;
 }
+
 header h1 {
-	font-size: 64px;
-	color: black;
-	text-align: center;
+  font-size: 64px;
+  color: black;
+  text-align: center;
 }
+
 header h2 {
-	font-weight: normal;
-	font-size: 16px;
-	text-align: center;
+  font-weight: normal;
+  font-size: 16px;
+  text-align: center;
 }
-section{
-	margin: 40px 0;
+
+section {
+  margin: 40px 0;
 }
+
 main {
-	max-width: 1200px;
-	background-color: var(--corbg);
-	margin: 15px auto;
-	padding: 0 25px;
-	box-sizing: border-box;
-	background-color: var(--corbg);
+  max-width: 1200px;
+  background-color: var(--corbg);
+  margin: 15px auto;
+  padding: 0 25px;
+  box-sizing: border-box;
   border: var(--bordapadrao);
-	border-radius: 40px;
+  border-radius: 40px;
 }
+
 footer {
-	max-width: 1200px;
-	margin: 15px auto;
-	padding: 0 25px;
-	box-sizing: border-box;
-	text-align: center;
-  margin: 0 auto;
-	background-color: var(--corbg);
+  max-width: 1200px;
+  margin: 15px auto;
+  padding: 0 25px;
+  box-sizing: border-box;
+  text-align: center;
+  background-color: var(--corbg);
   border: var(--bordapadrao);
-	border-radius: 40px;
+  border-radius: 40px;
 }
+
 h1 {
-	font-size: 48px;
-	margin: 6px;
+  font-size: 48px;
+  margin: 6px;
 }
+
 nav ul {
   display: flex;
-	flex-wrap: wrap;
-	flex-direction: row;
-	justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
   list-style: none;
   padding: 0;
   margin: 0;
   gap: 20px;
 }
+
 nav ul li {
-	color: #000000;
-	background-color: #03BFFF;
-	padding: 4px 8px;
-	border-radius: 16px;
+  color: #000000;
+  background-color: #03BFFF;
+  padding: 4px 8px;
+  border-radius: 16px;
 }
+
 nav ul li:hover {
-	background-color: #038FCE;
+  background-color: #038FCE;
 }
+
 nav ul li a {
   text-decoration: none;
   color: var(--cortexto);
 }
+
 .campo {
-	display: flex;
-	align-items: center;
-	margin-bottom: 8px;
-	gap: 6px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+  gap: 6px;
 }
+
 .campo label {
   font-weight: bold;
 }
+
 .campo input {
-	width: 60px;
+  width: 60px;
 }
+
 #boxIMC {
   display: grid;
   grid-template-columns: repeat(3, auto);
-	width: 600px;
+  width: 600px;
 }
 
 #resultadoIMC {
-	width: 600px;
-	height: 30px;
-	text-align: center;
+  width: 600px;
+  height: 30px;
+  text-align: center;
   font-weight: bold;
-	align-items: center;
-	padding: 8px;
+  align-items: center;
+  padding: 8px;
 }
+
 button {
   box-sizing: border-box;
   height: 22px;
