@@ -103,19 +103,27 @@ nav ul li a {
   color: var(--cortexto);
 }
 
-.campo {
+.campo, .campo2 {
   display: flex;
   align-items: center;
   margin-bottom: 8px;
   gap: 6px;
 }
 
-.campo label {
+.campo, .campo2 label {
   font-weight: bold;
+}
+
+.campo2 label{
+	width: 60px;
 }
 
 .campo input {
   width: 60px;
+}
+
+#resultadoMedia {
+  height: 1em;
 }
 
 #boxIMC {
@@ -126,7 +134,7 @@ nav ul li a {
 
 #resultadoIMC {
   width: 600px;
-  height: 30px;
+  height: 0px;
   text-align: center;
   font-weight: bold;
   align-items: center;
@@ -136,4 +144,31 @@ nav ul li a {
 button {
   box-sizing: border-box;
   height: 22px;
+}
+
+.divMedia {
+  display: grid;
+}
+
+#listaNomes {
+  list-style-type: none;
+	padding-left: 0;
+}
+
+#container {
+  display: flex;
+  gap: 20px;
+}
+
+#entrada4 {
+  flex: 1;
+}
+
+#saida4 {
+  width: 500px;
+  height: 200px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  background-color: #f9f9f9;
+  overflow-y: auto;
 }
