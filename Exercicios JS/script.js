@@ -56,43 +56,43 @@ document.getElementById("botaoIMC").addEventListener("click", () => {
 
 // EXERCÍCIO 3 --------------------------------------------------------
 function obterConceito(media) {
-	switch (true) {
-		case (media >= 9.5 && media <= 10.0):
-			return {conceito: 'Excelente', cor: '#006400'};
-		case (media >= 8.5 && media < 9.5):
-			return {conceito: 'Ótimo', cor: '#006400'};
-		case (media >= 7.5 && media < 8.5):
-			return {conceito: 'Bom', cor: '#006400'};
-		case (media >= 6.0 && media < 7.5):
-			return {conceito: 'Regular', cor: '#cc8400'};
-		default:
-			return {conceito: 'Insuficiente', cor: '#8b0000'};
-	}
+  switch (true) {
+    case (media >= 9.5 && media <= 10.0):
+      return {conceito: 'Excelente', cor: '#006400'};
+    case (media >= 8.5 && media < 9.5):
+      return {conceito: 'Ótimo', cor: '#006400'};
+    case (media >= 7.5 && media < 8.5):
+      return {conceito: 'Bom', cor: '#006400'};
+    case (media >= 6.0 && media < 7.5):
+      return {conceito: 'Regular', cor: '#cc8400'};
+    default:
+      return {conceito: 'Insuficiente', cor: '#8b0000'};
+  }
 }
 
 function calcularMedia() {
-	let nota1 = parseFloat(document.getElementById('nota1').value);
-	let nota2 = parseFloat(document.getElementById('nota2').value);
-	let resultadoDiv = document.getElementById('resultadoMedia');
+  let nota1 = parseFloat(document.getElementById('nota1').value);
+  let nota2 = parseFloat(document.getElementById('nota2').value);
+  let resultadoDiv = document.getElementById('resultadoMedia');
 
-	if (isNaN(nota1) || isNaN(nota2)) {
-		resultadoDiv.textContent = 'Erro: Ambas as notas devem ser números válidos.';
-		resultadoDiv.style.color = 'grey';
-		return;
-	}
+  if (isNaN(nota1) || isNaN(nota2)) {
+    resultadoDiv.textContent = 'Erro: Ambas as notas devem ser números válidos.';
+    resultadoDiv.style.color = 'grey';
+    return;
+  }
 
-	if (nota1 < 0 || nota1 > 10 || nota2 < 0 || nota2 > 10) {
-		resultadoDiv.textContent = 'Erro: As notas devem estar entre 0 e 10.';
-		resultadoDiv.style.color = 'grey';
-		return;
-	}
+  if (nota1 < 0 || nota1 > 10 || nota2 < 0 || nota2 > 10) {
+    resultadoDiv.textContent = 'Erro: As notas devem estar entre 0 e 10.';
+    resultadoDiv.style.color = 'grey';
+    return;
+  }
 
-	let media = ((nota1 + nota2) / 2).toFixed(2);
-	let mediaNum = parseFloat(media);
-	let {conceito, cor} = obterConceito(mediaNum);
+  let media = ((nota1 + nota2) / 2).toFixed(2);
+  let mediaNum = parseFloat(media);
+  let {conceito, cor} = obterConceito(mediaNum);
 
-	resultadoDiv.innerHTML = `Média: <b>${media}</b> - Conceito <b>${conceito}</b>`;
-	resultadoDiv.style.color = cor;
+  resultadoDiv.innerHTML = `Média: <b>${media}</b> - Conceito <b>${conceito}</b>`;
+  resultadoDiv.style.color = cor;
 }
 
 document.getElementById('botaoMedia').addEventListener('click', calcularMedia);
@@ -100,13 +100,13 @@ document.getElementById('botaoMedia').addEventListener('click', calcularMedia);
 // EXERCÍCIO 4 --------------------------------------------------------
 function obterNomes() {
   let nomes = document.getElementById('nomes').value;
-	nomes = nomes
+  nomes = nomes
     .split(',')
     .map(nome => nome.trim())
     .filter(nome => nome.length > 0)
     .map(nome => nome.toUpperCase())
     .sort();
-	return nomes;
+  return nomes;
 }
 
 function atualizarLista(listaNomes) {
