@@ -21,13 +21,14 @@
         <ul>
           <li><a href="#ex1"><strong>Ex. 1</strong></a></li>
           <li><a href="#ex2"><strong>Ex. 2</strong></a></li>
-          <li><a href="#ex3"><strong>Ex. 3</strong></a></li>
-          <li><a href="#ex4"><strong>Ex. 4</strong></a></li>
+					<li><a href="#ex3"><strong>Ex. 3</strong></a></li>
+					<li><a href="#ex4"><strong>Ex. 4</strong></a></li>
         </ul>
       </nav>
     </header>
 
     <main>
+		
       <section id="ex1">
         <h2>Exercício 1 - Contagem de Dias</h2>
         <div id="saidaFerias"></div>
@@ -54,47 +55,70 @@
 
         <div id="resultadoIMC"></div>
       </section>
-
-      <hr />
-
-      <section id="ex3">
+			
+			<hr />
+			
+			<section id="ex3">
         <h2>Exercício 3 - Média das notas</h2>
-        <div id="boxMedia">
-          <div class="campo2">
-            <label for="nota1">Nota 1:</label>
-            <input id="nota1" type="number" step="0.01" min="0" max="10" value="0" />
-          </div>
+				<div id="boxMedia">
+					<div class="campo2">
+						<label for="nota1">Nota 1:</label>
+						<input id="nota1" type="number" step="0.01" min="0" max="10" value="0" />
+					</div>
 
-          <div class="campo2">
-            <label for="nota2">Nota 2:</label>
-            <input id="nota2" type="number" step="0.01" min="0" max="10" value="0" />
-          </div>
+					<div class="campo2">
+						<label for="nota2">Nota 2:</label>
+						<input id="nota2" type="number" step="0.01" min="0" max="10" value="0" />
+					</div>
 
-          <button id="botaoMedia">Calcular Média</button>
+					<button id="botaoMedia">Calcular Média</button>
+				</div>
+				<br/>
+				<div id="resultadoMedia"></div>
+      </section>
+			
+			<hr />
+			
+			<section id="ex4">
+				<h2>Exercício 4 - Ordenar Nomes</h2> 
+				
+				<div id="container">
+					<div id="entrada4">
+						<label for="nomes">Digite os nomes separados por vírgulas:</label><br/>
+						<textarea id="nomes" rows="4" cols="40" placeholder="Ex: Max, Delmacy, João, Guilherme"></textarea><br/><br/>
+						
+						<button id="botaoOrdenar">Ordenar e Exibir</button>
+					</div>
+					<div id="saida4">
+						<h3>Resultado:</h3>
+						<ul id="listaNomes"></ul>
+					</div>
+				</div>
+      </section>
+			
+			<hr />
+			
+			<section id="ex5">
+        <h2>Exercício 5 - Que dia é hoje?</h2>
+        <div id="data5"></div>
+      </section>
+			
+      <hr />
+
+      <section id="ex6">
+        <h2>Exercício 6 - Acerte o número!</h2>
+        <div id="adivinhacao">
+          <label for="chuteInput">Adivinhe um número de 1 a 10:</label>
+          <input type="number" id="chuteInput" min="1" max="10" />
+          <button id="chuteBotao">Adivinhar</button>
+          <p id="chuteMensagem"></p>
+          <p id="chances"></p>
+          <button id="dnvBotao" style="display: none;">Jogar Novamente</button>
         </div>
-        <br/>
-        <div id="resultadoMedia"></div>
       </section>
 
       <hr />
-
-      <section id="ex4">
-        <h2>Exercício 4 - Ordenar Nomes</h2> 
-
-        <div id="container">
-          <div id="entrada4">
-            <label for="nomes">Digite os nomes separados por vírgulas:</label><br/>
-            <textarea id="nomes" rows="4" cols="40" placeholder="Ex: Max, Delmacy, João, Guilherme"></textarea><br/><br/>
-
-            <button id="botaoOrdenar">Ordenar e Exibir</button>
-          </div>
-          <div id="saida4">
-            <h3>Resultado:</h3>
-            <ul id="listaNomes"></ul>
-          </div>
-        </div>
-      </section>
-
+			
     </main>
 
     <footer>
