@@ -172,3 +172,25 @@ button {
   background-color: #f9f9f9;
   overflow-y: auto;
 }
+
+#RelogioDigital {
+	font-size: 20px; 
+	font-weight: bold;
+	color: lightcyan;
+	text-align: center;
+	border: 2px solid black;
+	padding: 10px;
+	width: 100px;
+ background-color: #001a4d;
+}
+
+#coracao {
+	text-align: center;
+	width: 200px;
+	height: 200px;
+}
+
+#rollover {
+	width: 256px;
+	height: 256px;
+}

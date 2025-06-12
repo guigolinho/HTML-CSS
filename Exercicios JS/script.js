@@ -223,3 +223,70 @@ document.getElementById('chuteBotao').addEventListener('click', verificarAdivinh
 document.getElementById('dnvBotao').addEventListener('click', iniciarJogo);
 
 iniciarJogo();
+
+// EXERCÍCIO 7 --------------------------------------------------------
+const selecao7 = document.getElementById('selecao7');
+
+document.getElementById('botao7').addEventListener('click', () => {
+	  if (selecao7.value) {
+        window.open(selecao7.value, '_blank');
+    } else {
+        alert("Escolha um site válido!");
+    }
+});
+
+// EXERCÍCIO 8 --------------------------------------------------------
+// Reutilizei a função formatarDigito do Exercício 5
+function atualizarRelogioDigital() { 
+    let agora = new Date();
+    let horas = formatarDigito(agora.getHours());
+    let minutos = formatarDigito(agora.getMinutes());
+    let segundos = formatarDigito(agora.getSeconds());
+
+    document.getElementById('RelogioDigital').textContent = `${horas}:${minutos}:${segundos}`;
+}
+
+setInterval(atualizarRelogioDigital, 1000);
+atualizarRelogioDigital();
+
+// EXERCÍCIO 9 --------------------------------------------------------
+const coracao = document.getElementById('coracao');
+let aumentando = true;
+let tamanho = 100;
+
+function pulsar() {
+    if (aumentando) {
+        tamanho += 1;
+        if (tamanho >= 120) {
+            aumentando = false;
+        }
+    } else {
+        tamanho -= 1;
+        if (tamanho <= 100) {
+            aumentando = true;
+        }
+    }
+    coracao.style.fontSize = `${tamanho}px`;
+}
+
+setInterval(pulsar, 50)
+
+// EXERCÍCIO 10 --------------------------------------------------------
+const imagens10 = [
+    './imagens/gatinho.jpg',
+    './imagens/casal.jpg',
+    './imagens/juju1.png',
+    './imagens/juju2.png',
+		'./imagens/pensando.png'
+];
+
+const rollover = document.getElementById('rollover');
+let i = 0
+
+function mudarImagem() {
+	i++;
+	if (i >= 4) { i = 0; }
+  rollover.src = imagens10[i];
+}
+
+setInterval(mudarImagem, 3000); //
