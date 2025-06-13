@@ -273,10 +273,10 @@ setInterval(pulsar, 50)
 
 // EXERCÍCIO 10 --------------------------------------------------------
 const imagens10 = [
-    './imagens/gatinho.jpg',
-    './imagens/casal.jpg',
-    './imagens/juju1.png',
-    './imagens/juju2.png',
+    './imagens/assustado.jpg',
+    './imagens/gato_maneiro.png',
+    './imagens/chillguy.png',
+    './imagens/uga.jpg',
 		'./imagens/pensando.png'
 ];
 
@@ -289,4 +289,4 @@ function mudarImagem() {
   rollover.src = imagens10[i];
 }
 
-setInterval(mudarImagem, 3000); //
+setInterval(mudarImagem, 3000);
